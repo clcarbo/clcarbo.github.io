@@ -1,9 +1,22 @@
+:root {
+    --orange: #E16428;
+    --grey: #363333;
+    --black: #272121;
+    --white: #F6E9E9;
+}
+
 body{
     font-family: 'Open Sans', sans-serif;
-    color: #F6E9E9;
+    color: var(--white);
 }
+
+a{
+    color: var(--white);
+    text-decoration: underline;
+}
+
 .nav-link{
-    color: #F6E9E9;
+    color: var(--white);
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -12,21 +25,21 @@ body{
 }
 
 nav.navbar{
-    background-color: #E16428;
+    background-color: var(--orange);
 }
 
 main{
-    background: #272121;
+    background: var(--black);
 }
 
 #jumbotron{
+    background-color: var(--grey);
     height: 90vh;
-    background: #363333;
     padding-top: 0em;
 }
 
 #jumbotron .row{
-    color: #F6E9E9;
+    color: var(--white);
     height: 100%;
     margin-right: 0px;
     margin-left: 0px;
@@ -41,8 +54,8 @@ main{
 #jumbotron .row p{
     font-size: 36px;
     line-height: 58px;
-    border-top: 2px solid #F1F1F1;
-    border-bottom: 2px solid #F1F1F1;
+    border-top: 2px solid var(--white);
+    border-bottom: 2px solid var(--white);
     border-raidus: 10px;
 }
 
@@ -61,6 +74,10 @@ main{
         font-size: 23px;
         line-height: 44px;
     }
+
+    #about-blurb p, #about-blurb li{
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width: 767.98px){
@@ -74,16 +91,17 @@ main{
         line-height: 34px;
     }
 
-    #about-blurb p{
+    #about-blurb p, #about-blurb li{
         font-size:15px;
     }
+
 }
 
 
 
 .sec-head{
     text-transform: uppercase;
-    color: #E16428;
+    color: var(--orange);
     font-weight: bold;
     font-size: 28px;
     padding-right: 50px;
@@ -94,12 +112,30 @@ main{
     line-height: 39px;
     display: flex;
     align-items: center;
-    text-align: justify;
 }
 
+.subtle{
+    color: #a38f8f;
+    font-size: 18px;
+}
 
 #posts-container .row .col-lg{
-    background: #363333;
+    background: var(--grey);
 }
 
+#footer{
+    background: var(--grey);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#footer div div{
+    height: 30px;
+}
+
+#jekyll-logo{
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+}
 

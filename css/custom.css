@@ -8,6 +8,7 @@
 body{
     font-family: 'Open Sans', sans-serif;
     color: var(--white);
+    background-color: var(--grey);
 }
 
 a{
@@ -39,6 +40,10 @@ main{
     background-size: cover;
     height: 90vh;
     padding-top: 0em;
+
+    @media screen and (min-width: 576px) {
+	background-attachment: scroll;
+    }
 }
 
 #jumbotron .row{
